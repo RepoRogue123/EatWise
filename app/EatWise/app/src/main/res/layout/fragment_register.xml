@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/user_data_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frontend.authentication.fragments.RegisterFragment">
+
+    <RelativeLayout
+        android:id="@+id/fragment_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/large_spacing"
+        android:layout_marginTop="@dimen/xx_large_spacing"
+        android:layout_marginBottom="@dimen/x_large_spacing"
+        android:background="@drawable/items_container"
+        tools:ignore="UselessParent">
+
+        <ProgressBar
+            android:id="@+id/phase1_progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/medium_plus_spacing"
+            android:max="90"
+            android:progress="30" />
+
+        <TextView
+            android:id="@+id/user_data_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phase1_progress_bar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/medium_spacing"
+            android:text="@string/user_data"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="italic" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/data_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_data_label"
+            android:layout_marginHorizontal="@dimen/medium_plus_spacing"
+            android:layout_marginTop="@dimen/medium_plus_spacing"
+            android:background="@drawable/theme_button">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/data_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/name"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/medium_spacing"
+                android:paddingEnd="@dimen/small_spacing"
+                android:paddingBottom="@dimen/tiny_spacing"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/medium_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/data_email_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_name_layout"
+            android:layout_marginHorizontal="@dimen/medium_plus_spacing"
+            android:layout_marginTop="@dimen/medium_plus_spacing"
+            android:background="@drawable/theme_button">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/data_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:paddingStart="@dimen/medium_spacing"
+                android:paddingEnd="@dimen/small_spacing"
+                android:paddingBottom="@dimen/tiny_spacing"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/medium_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/data_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_email_layout"
+            android:layout_marginHorizontal="@dimen/medium_plus_spacing"
+            android:layout_marginTop="@dimen/medium_plus_spacing"
+            android:background="@drawable/theme_button"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/data_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/medium_spacing"
+                android:paddingEnd="@dimen/small_spacing"
+                android:paddingBottom="@dimen/tiny_spacing"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/medium_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/info_con_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_password_layout"
+            android:layout_marginHorizontal="@dimen/medium_plus_spacing"
+            android:layout_marginTop="@dimen/medium_plus_spacing"
+            android:background="@drawable/theme_button"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/data_con_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:paddingStart="@dimen/medium_spacing"
+                android:paddingEnd="@dimen/small_spacing"
+                android:paddingBottom="@dimen/tiny_spacing"
+                android:textColor="@color/light_black"
+                android:textSize="@dimen/medium_text_size" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <include
+            android:id="@+id/data_transition"
+            layout="@layout/layout_transition_custom_buttons" />
+
+        <include
+            android:id="@+id/data_error_view"
+            layout="@layout/layout_error_custom_view" />
+
+    </RelativeLayout>
+
+</FrameLayout>

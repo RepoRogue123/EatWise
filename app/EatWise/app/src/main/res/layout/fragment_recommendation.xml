@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frontend.home.fragments.RecommendationFragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_spacing"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:text="@string/food_recommendations"
+        android:textColor="@color/white"
+        android:textSize="@dimen/semi_large_text_size" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recommend_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:layout_marginStart="@dimen/medium_spacing"
+        android:layout_marginTop="@dimen/medium_spacing"
+        android:layout_marginEnd="@dimen/medium_spacing"
+        android:layout_marginBottom="@dimen/medium_spacing" />
+
+
+    <RelativeLayout
+        android:id="@+id/wait_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent_back_normal"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/wait_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/wait_progress"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tiny_spacing"
+            android:text="@string/wait"
+            android:textSize="@dimen/small_text_size" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

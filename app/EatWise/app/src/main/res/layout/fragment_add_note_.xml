@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:background="@color/green_dark"
+    tools:context=".frontend.home.fragments.AddNoteFragment">
+
+    <TextView
+        android:id="@+id/TitleNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/add_new_note"
+        android:textAlignment="center"
+        android:textColor="@color/orange_700"
+        android:textSize="@dimen/large_text_size"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/theme_rounded_white_background"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/TitleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/small_spacing"
+            android:autofillHints=""
+            android:background="@color/white"
+            android:hint="@string/title_text"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:padding="@dimen/small_spacing"
+            android:textColor="@color/black"
+            android:textColorHint="@color/warm_grey" />
+
+        <EditText
+            android:id="@+id/DescriptionText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:autofillHints=""
+            android:background="@color/white"
+            android:gravity="top"
+            android:hint="@string/description_text"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/warm_grey" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/SaveNote_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/save_note"
+        android:textAlignment="center"
+        android:textColor="@color/orange_700"
+        android:textSize="@dimen/medium_text_size"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

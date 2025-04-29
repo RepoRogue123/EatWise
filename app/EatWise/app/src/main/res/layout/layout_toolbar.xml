@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/custom_action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:background="?attr/colorPrimary"
+    android:elevation="@dimen/elevation_toolbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/large_spacing"
+        android:layout_marginEnd="@dimen/small_spacing">
+
+        <ImageButton
+            android:id="@+id/image_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_round_menu_24"
+            android:foreground="?android:attr/selectableItemBackground"
+            tools:ignore="ContentDescription" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/tiny_spacing"
+            app:cardBackgroundColor="?attr/colorPrimary"
+            app:cardCornerRadius="@dimen/large_card_radius"
+            app:cardElevation="@dimen/elevation_app_title_card"
+            app:contentPaddingRight="@dimen/tiny_spacing"
+            tools:ignore="RelativeOverlap">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layoutDirection="ltr"
+                android:orientation="horizontal"
+                tools:ignore="RelativeOverlap,UselessParent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/theme_highlight"
+                    android:fontFamily="@font/lato_black"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:text="@string/app_name_first_part"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/title_text_size" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_black"
+                    android:paddingStart="2dp"
+                    android:paddingEnd="2dp"
+                    android:text="@string/app_name_second_part"
+                    android:textColor="?attr/colorSecondary"
+                    android:textSize="@dimen/title_text_size" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/image_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_outline_notifications_24"
+            android:foreground="?android:attr/selectableItemBackground"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
