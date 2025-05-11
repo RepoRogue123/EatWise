@@ -62,6 +62,9 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
         
         // Initially hide the last captured card until an image is processed
         binding.cardLastCaptured.visibility = View.GONE
+
+        // Ensure the app title is visible only on the home page
+        binding.textAppDetails.visibility = View.VISIBLE
     }
 
     private fun hookProgressSection() {

@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="green_500">#1B5E20</color> <!-- Primary Color -->
-    <color name="green_light">#4C8C4A</color> <!-- Primary Light -->
-    <color name="green_dark">#003300</color> <!-- Primary Dark -->
-    <color name="orange_700">#F57C00</color> <!-- Secondary Color -->
-    <color name="orange_light">#FFAD42</color> <!-- Secondary Light -->
-    <color name="orange_dark">#BB4D00</color> <!-- Secondary Dark -->
-    <color name="black">#FF000000</color>
-    <color name="light_black">#CD000000</color>
-    <color name="white">#FFFFFFFF</color>
-    <color name="warm_grey">#9E9A9A</color>
-    <color name="red">#FF0000</color>
-    <color name="dark_red">#C10A0A</color>
-    <color name="white_blue">#2A3c58</color>
-    <color name="grey">#808080</color>
-    <color name="grey_dark">#5d5d5d</color>
+    <color name="blue_primary">#2196F3</color>
+    <color name="blue_dark">#1976D2</color>
+    <color name="blue_light">#BBDEFB</color>
+    <color name="orange_700">#F57C00</color>
+    <color name="orange_dark">#E65100</color>
+    <color name="orange_light">#FFCC80</color>
+    <color name="teal_700">#00796B</color>
+    <color name="teal_light">#B2DFDB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_blue">#E3F2FD</color>
+    <color name="warm_grey">#9E9E9E</color>
+    <color name="black">#000000</color>
+    <color name="grey_dark">#616161</color>
+    <color name="light_black">#424242</color>
+    <color name="green_light">#A5D6A7</color>
+    <color name="dark_red">#B71C1C</color>
+    <color name="red">#F44336</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="custom_background_color">#F5F5F5</color>
+    <color name="custom_toolbar_color">#3F51B5</color>
+    <color name="custom_text_tint">#757575</color>
+    <color name="custom_icon_tint">#FF5722</color>
+    <color name="blue_secondary">#2196F3</color>
 </resources>

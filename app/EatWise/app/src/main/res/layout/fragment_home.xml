@@ -55,6 +55,21 @@
 
     </androidx.cardview.widget.CardView>
 
+    <TextView
+        android:id="@+id/text_app_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_spacing"
+        android:layout_marginBottom="@dimen/small_spacing"
+        android:background="?attr/colorPrimaryVariant"
+        android:padding="@dimen/small_spacing"
+        android:text="EatWise app: Detects food from images and gives its calories"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium_text_size"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="italic" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

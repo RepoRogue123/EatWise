@@ -87,6 +87,9 @@ class MainActivity : AppCompatActivity() {
         
         // Request permissions
         requestCameraPermission()
+
+        // Add a welcome toast message
+        Toast.makeText(this, "Welcome to EatWise!", Toast.LENGTH_LONG).show()
     }
     
     private fun requestCameraPermission() {
@@ -151,11 +154,6 @@ class MainActivity : AppCompatActivity() {
                 }
                 R.id.menu_item_diet_calender -> {
                     loadFragment(CalenderFragment.newInstance())
-                    binding.drawerLayout.closeDrawers()
-                    true
-                }
-                R.id.menu_item_photo_album -> {
-                    loadFragment(AlbumFragment.newInstance())
                     binding.drawerLayout.closeDrawers()
                     true
                 }

@@ -21,10 +21,6 @@
         android:id="@+id/menu_item_reminder"
         android:icon="@drawable/ic_round_reminder_24"
         android:title="@string/reminder" />
-    <item
-        android:id="@+id/menu_item_photo_album"
-        android:icon="@drawable/ic_round_photo_album_24"
-        android:title="@string/photo_album" />
 
     <item android:title="@string/others">
         <menu>
